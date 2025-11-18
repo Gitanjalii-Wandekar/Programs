@@ -1,14 +1,14 @@
-import java.swing.*;
-
+import javax.swing.*;
 import java.awt.event.*;
+
 
 class AdditionFrame implements ActionListener
 {
-    private JFrame fobj;
-    private JButton bobj;
-    private JTextField tobj;
-    private JTextField pobj;
-    private JLabel Userlabel1, Userlabel2, Resultlabel;
+    JFrame fobj;
+    JButton bobj;
+    JTextField tobj;
+    JTextField pobj;
+    JLabel Userlabel1, Userlabel2, Resultlabel;
 
     public AdditionFrame(String title, int width, int height)
     {
@@ -25,10 +25,10 @@ class AdditionFrame implements ActionListener
         Userlabel2.setBounds(50,100,100,30);
 
         pobj = new JTextField();                    //textfield of user name
-        pobj.setBounds(170,50,150,30);
+        pobj.setBounds(150,100,150,30);
 
         bobj = new JButton("+");
-        bobj.setBounds(150,150,100,30);
+        bobj.setBounds(150,150,50,30);
 
         Resultlabel = new JLabel("");
         Resultlabel.setBounds(150,200,250,30);
@@ -71,7 +71,7 @@ class LoginFrameNew
 {   
       public static void main(String A[])
       {
-            AdditionFrame aobj = new AdditionFrame("Addition",400,300);
+            AdditionFrame aobj = new AdditionFrame("Calculator",400,300);
       }
 
 
